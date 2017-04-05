@@ -25,37 +25,10 @@ firebaseRef.set({
   }
 });
 
-// firebaseRef.update({
-//   'app/name': "todo application",
-//   'user/name': 'Annie'
-// })
+firebaseRef.update({
+  isRunning: null
+});
 
-firebaseRef.child('app').update({
-  name: "todo application2"
-})
-firebaseRef.child('user').update({
-  name: "Peter"
-})
-
-// firebaseRef.update({
-//   isRunning: false,
-//   'app/name': 'Todo Application'
-// });
-
-// firebaseRef.child('app').update({
-//   name: "todo application"
-// }).then(() => {
-//   console.log('Update worked!');
-// }, (e) => {
-//   console.log('Update failed');
-// })
-
-
-
-
-
-
-
-
+firebaseRef.child('user/age').remove();
 
 
