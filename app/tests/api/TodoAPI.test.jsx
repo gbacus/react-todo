@@ -52,11 +52,5 @@ describe("TodoAPI", () => {
       expect(filteredTodos.length).toBe(3);
     });
   });
-})
-
-
-
-
-
-
 });
+
